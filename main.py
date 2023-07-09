@@ -6,7 +6,7 @@ class MyBot(commands.Bot):
 
     async def setup_hook(self) -> None:
         await self.load_extension("jishaku")
-        await self.load_extension("cogs.nsfw")
+        await self.load_extension("cogs.dnsutils")
 
     async def on_ready(self) -> None:
         print("Ready")
